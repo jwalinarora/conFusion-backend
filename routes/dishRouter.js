@@ -190,7 +190,7 @@ dishRouter.route('/:dishId/comments')
 dishRouter.route('/:dishId/comments/:commentId')
 .get((req,res,next)=>{
 	//res.end("Will send all details of "+req.params.dishId);
-	//	.populate('comments.author')
+	.populate('comments.author')
 	Dishes.findById(req.params.dishId)
 	.then((dishes)=>{
 		// res.statusCode=200;

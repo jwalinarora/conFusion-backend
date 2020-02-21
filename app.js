@@ -129,7 +129,7 @@ app.use('/users', usersRouter);
 	
 // }
 // app.use(auth);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express. static(path.join(__dirname, 'public')));
 
 const Dishes=require('./models/dishes');
 
